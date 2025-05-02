@@ -12,13 +12,18 @@ config_version=5
 
 config/name="AW Library"
 run/main_scene="res://scenes/main/main.tscn"
-config/features=PackedStringArray("4.3", "Mobile")
+config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GithubApi="*res://autoloads/GithubAPI.gd"
 
 [display]
 
-window/stretch/mode="canvas_items"
-window/stretch/aspect="keep_height"
+window/stretch/mode="viewport"
+mouse_cursor/custom_image="res://assets/cursors/ArrowCursor.png"
+mouse_cursor/tooltip_position_offset=Vector2(0, 0)
 
 [rendering]
 

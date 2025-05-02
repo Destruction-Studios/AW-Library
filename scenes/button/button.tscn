@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://doeyfvo7s7uyq"]
+
+[ext_resource type="Texture2D" uid="uid://f5xrrt5ygwk0" path="res://assets/backgrounds/Border.png" id="1_lrmay"]
+
+[node name="Button" type="TextureButton"]
+texture_filter = 1
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_lrmay")
+texture_pressed = ExtResource("1_lrmay")
+texture_hover = ExtResource("1_lrmay")
+stretch_mode = 0
+flip_h = true
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="Label" type="Label" parent="MarginContainer"]
+layout_mode = 2
+text = "Text"
+horizontal_alignment = 1
+vertical_alignment = 1
